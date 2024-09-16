@@ -1,0 +1,159 @@
+/* devtools in chrom - cmd + option +  I (allows you to change website temporarely*/
+
+
+/* change margin of th html */
+html {margin:0px}
+
+body {background-color: antiquewhite;
+    font-family: Helvetica, Arial, Sans-serif; /* put more than one font if the font is not available on the user webiste */
+     margin: 0px;
+     /* over over the button in chrome to see where the margins are attribtued to by clicked on the top left 
+     IF youc want to changea all the margins then just add one number px*/
+}
+
+
+body > main article {
+    width: 70%;
+    margin: auto; /* to center everything use the 'auto' function */
+}
+
+
+form {text-align: center;}
+h2 {text-align: center;}
+
+/* FIX MARGINS ------------------------------------------------------ */
+
+/* fix the top margin space in the main heater and footer */
+#logo{margin: 0px;
+    font-family: "Fredoka One", sans-serif; /* change the font of the header - use "" when 2 words */
+}
+
+/* fix the  bottom margin in the footer*/
+ul{margin: 0px;}
+
+/* to change differentl top and bottom margin: margin: 10px (top&bottom) 100px (left&right)
+or 4 values for clockwise: top, right, bottom, left*/
+
+
+/* CHANGE COLOR AND FORMAT ------------------------------------------- */
+/* header {background-color: orange;}  */
+/* this code will change the color for all the headers */
+body > header {background-color: orange;  /* color tag is for the text color */
+    color: white;
+    height: 10vh; }
+
+/* change the navigation style and decoration in the header */
+body > header > nav > ul {
+    /* remove the bulletpoints with one of the following codes */
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbutton {
+    color:white; /* remove the underline */
+    text-decoration: none;
+}
+
+
+body > footer {background-color: orange;}
+/* check the specificity of the colors, font ect */
+
+
+/* SELECTORS ----------------------------------------------------------- */
+/* different type of selectors: 
+- universal: * (AVOID IT !!!)
+- type selector: body, header, p, div, a 
+- class: select all elements within a class, how?
+attribute a class to elements e.g. <header class = "name"
+in the CSS target the class by '.name {}' 
+- ID: selects all elements with ID (shoud be unique) how?
+attribute ID to element e.g <header id="name"
+in the CSS target the elements by '#name
+- child: direct descendent of a tag e.g. body > header */
+
+
+
+/* PICTURE CHANGE ------------------------------------------------------ */
+/* 0 to 100 increases the circluar shape of the picture */
+img{border-radius: 50%;}
+
+
+/* FONT SIZE ----------------------------------------------------------- */
+/* Pixels - absolute, when precision is wanted and one pixel on one screen is the same on another screen (1800K and 4K)
+    EM/REM - aboslute but allows you to change the px size by selecting the px of the main body and putting the other tag 'font-size: o.5 em 
+    VW/VH - best one bc the height and width will change automatically based on the screnn
+    it has viewpoint width and height */
+/* text will take up the percentage number of a screen even if the screens are different*/
+body{font-size: 1.5vw;}
+
+
+/* ADD SHADOW TO THE LOGO BOX ------------------------------------------ */
+/* [horizontal offset] [vertical offset] [blur radius] [color]: */
+#logo{box-shadow: 8px 8px 10px 3px darkorange;
+    text-shadow: 
+    1px 1px 0px black, /* bottom-right shadow */
+    -4px 1px 0px blue, /* bottom-left shadow */
+    1px -1px 0px violet, /* top-right shadow */
+    -1px -1px 0px green; /* top-left shadow */
+    height: 40%;
+    width: 48%; 
+    padding: 15px; /* padding is the space/margin of the text */
+    border-radius: 16%;
+}
+
+
+/* COLOR --------------------------------------------------------------- */
+/* use rgb (red-gree-blue) values or #number (ali - use lol.colors i.e. webdesignranking.com/resources/lolcolors) */
+body > header {color: #50ffaa}
+
+/* -------------------------- WEEK 4 ----------------------------------- */
+
+/* Flexbox = layout into css that allows you to change the layout of an elemnt to be flexbox and to create a one-dimension elements in rows or coloumns */
+/* put the logo next to the links within the nav tag and separate them */
+/* the parent element (in our case header that contains the h1 and nav */
+#main_header {
+    background-color: orange;
+    display: flex; /* turn the entire header into a flexbox */
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around} /* move the nav part next to the logo and center ir*/
+
+
+/* create the flexbox for only the list */
+#navul {display: flex;
+        } 
+
+#navul > li {padding: 8px;
+            margin: 16px; /* increase space between the uls */
+        }
+
+.navbutton {
+        color:white; /* remove the underline */
+        text-decoration: none;
+        padding: 12px; /* increase clickable space */
+        border: 1px solid white;
+        border-radius: 10%;
+        }
+
+
+/* change the sign up newsletter */
+body > footer {display: flex;}
+#footerul {display: flex;
+            list-style: none; /* remove bulletpoint from list*/
+            justify-content: space-around;
+        }
+#footerul > div > li {margin-left: 30px;
+}
+/* if you want to change the a within the li you need to be specific */
+#footerul > div > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+#main-content {display: flex;
+    justify-content: space-around;
+}
+#main-content aside {
+    margin: 40px;
+}
+/* css-tricks.com - guide on flexbox  */

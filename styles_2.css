@@ -1,0 +1,118 @@
+/* change margin of th html */
+html {margin:0px}
+html{font-size: 1.5vw;}
+/* fix the  bottom margin in the footer*/
+ul{margin: 0px;}
+
+/* change background color */
+body {background-color: #F0E5DE;
+    font-family: Helvetica, Arial, Sans-serif; /* put more than one font if the font is not available on the user webiste */
+     margin: 0px;
+}
+
+
+
+body > main article {
+    width: 80%;
+    margin: auto; /* to center everything use the 'auto' function */
+}
+
+#main-content {display: flex;
+    justify-content: space-around}
+
+#main-content > div {
+    width: 70%
+}
+
+#main-content aside {
+    width: 20%
+}
+    
+
+/* fix the top margin space in the main heater and footer */
+#logo{margin: 0px;
+    font-family: "Fredoka One", sans-serif; /* change the font of the header - use "" when 2 words */
+}
+
+
+
+/* change color of the header and footear */
+body > header {background-color: #ABD0CE;  /* color tag is for the text color */
+    color: #D9D4CF;
+    height: 10vh;
+}
+
+body > footer {background-color: #ABD0CE;}
+/* check the specificity of the colors, font ect */
+
+/* add text shadow */
+#logo{
+    text-shadow: 
+    1px 1px 0px #7C7877, /* bottom-right shadow */
+    -4px 1px 0px #7C7877, /* bottom-left shadow */
+    1px -1px 0px #7C7877, /* top-right shadow */
+    -1px -1px 0px #7C7877; /* top-left shadow */
+    height: 40%;
+    width: 28%; 
+    padding: 15px; /* padding is the space/margin of the text */
+}
+
+/* header change */
+#main_header {background-color: #ABD0CE;
+    display: flex; /* turn the entire header into a flexbox */
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around} 
+
+
+ #navul {display: flex;
+        background-color: #ABD0CE;
+        list-style: none;
+        text-decoration: none;
+    } 
+
+#navul > li {
+    padding: 8px;
+        margin: 16px; /* increase space between the uls */
+    }
+
+.navbutton {
+        color:white; /* remove the underline */
+        text-decoration: none !important;
+        padding: 10px; /* increase clickable space */
+        border: 1px solid white;
+        border-radius: 10%;
+        }
+
+
+/* footer */
+/* change the sign up newsletter */
+
+footer > div {display: flex;
+     justify-content: center;}
+body > footer > h2 {display: flex; justify-content: center;}
+
+#navul > li > a {color:white; 
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10%}
+
+/* change bulletpoints */
+
+#footerul {display: flex;
+            list-style: none; /* remove bulletpoint from list*/
+            align-items: center;
+            justify-content: space-around}
+
+
+#footerul > div > li > a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* PIZZA IMAGE - CENTER */
